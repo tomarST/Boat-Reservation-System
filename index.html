@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">CS 4754 PROJECT</h1>
+    <h2 style="text-align: center;">Soham Tomar StudID: 201602208</h2>
+    <h1>
+        Query1: Given the cost, retrieve the names of the suppliers who have ever supplied a part with that cost or higher 
+    </h1>
+    <form method="POST" action="cgi-bin/soham_tomar201602208.py">
+        Enter cost: <input type="number" name="cost"><br>
+        <input type="submit" value="Submit" name="query1">
+    </form>
+    <h1>
+        Query2: Reterive Suppliers information for a given part
+    </h1>
+    <form method="POST" action="cgi-bin/soham_tomar201602208.py">
+        Enter the name of the part: <input type="text" name="pname" > <br>
+        Enter the information you want to retrive about supplier:
+        <br>
+        <input type="checkbox" name="sid"> supplier id <br>
+        <input type="checkbox" name="sname"> supplier name <br>
+        <input type="checkbox" name="address"> supplier address <br>
+        <input type="checkbox" name="cost"> cost of the part <br>
+        <input type="Submit" value="Submit" name="query2">
+
+    </form>
+    <h1>
+        Query3: Given the pid, retrieve thenames and addresses for the suppliers who charge the most for that part
+    </h1>
+    <form method="POST" action="cgi-bin/soham_tomar201602208.py">
+        Enter pid: <input type="text" name="pid"><br>
+        <input type="submit" value="Submit" name="query3">    
+    </form>
+    <h1>
+        Query4: Given the color and address, retrieve the names of the parts with that color which were supplied by all the suppliers in the given address
+    </h1>
+    <form method="POST" action="cgi-bin/soham_tomar201602208.py">
+        Enter color: <input type="text" name="color"><br>
+        Enter address: <input type="text" name="address"><br>
+        <input type="submit" value="Submit" name="query4">
+    </form>
+    <h1>
+        Query5: Given the address, retrieve the sids and names of the suppliers in that address who do not supply any part
+    </h1>
+    <form method="POST" action="cgi-bin/soham_tomar201602208.py">
+        Enter address: <input type="text" name="address"><br>
+        <input type="submit" value="Submit" name="query5">
+    </form> 
+</body>
+</html>
+

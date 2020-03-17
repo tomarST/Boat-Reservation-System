@@ -1,0 +1,5 @@
+P1	Mother board	Grey
+P2	CPU-AMD	White
+P3	Case	Grey
+P4	Monitor	White
+P5	Cable	Red 
